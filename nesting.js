@@ -85,9 +85,10 @@ function removeDuplicates(arr){
   
 
   for(let i=0; i < workplaceAccidents.length; i++ ){
-    for(let j=0; j < workplaceAccidents.length; j++){
-      if (workplaceAccidents[i] == workplaceAccidents[j]){
-        delete workplaceAccidents[j]
+    for(let j= i +1; j < workplaceAccidents.length; j++){
+      if (workplaceAccidents[i] === workplaceAccidents[j]){
+       // delete workplaceAccidents
+       workplaceAccidents.splice(j, 1)
       } 
     }
   }

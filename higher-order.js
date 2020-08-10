@@ -96,10 +96,11 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 
 //Code Here
 let myStrongest  = monstersInYourPocket.filter(cb => {
-  if (monstersInYourPocket[CP] > 200) {
-      
+  if( monstersInYourPocket > 200){
+
   }
-})
+      
+  })
 
 
 
